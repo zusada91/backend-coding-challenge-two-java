@@ -19,6 +19,8 @@ import lombok.ToString;
 @Document(collection = "zipcode")
 public class ZipCode {
 
+	
+	private String _id;
 	@Id
 	private String zip_code;
 	private String locality;
@@ -34,6 +36,12 @@ public class ZipCode {
 	private String municipality;
 	
 	
+	public String get_id() {
+		return _id;
+	}
+	public void set_id(String _id) {
+		this._id = _id;
+	}
 	public String getZip_code() {
 		return zip_code;
 	}

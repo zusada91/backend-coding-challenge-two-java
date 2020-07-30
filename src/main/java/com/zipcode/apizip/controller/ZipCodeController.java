@@ -42,7 +42,6 @@ public class ZipCodeController {
 	public ZipCode getZipCode(@PathVariable String zip_code) {
 
 		ZipCode zipCode = zipCodeRepository.findOne(zip_code);
-		
 		return zipCodeRepository.findOne(zip_code);		
 	}
 		
